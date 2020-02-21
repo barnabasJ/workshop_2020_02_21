@@ -30,7 +30,7 @@ public class TreeController : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             var player = other.gameObject.GetComponent<PlayerController>();
-            if (player.hasWater)
+            if (player.HasWater)
             {
                 health += 10;
             }
