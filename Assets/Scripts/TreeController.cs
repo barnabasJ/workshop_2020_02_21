@@ -7,6 +7,8 @@ using UnityEngine;
 public class TreeController : MonoBehaviour
 {
 
+    public GameObject sickTree;
+    public GameObject healthyTree;
     public int health = 0;
 
     public int healthThreshold = 50;
@@ -14,6 +16,8 @@ public class TreeController : MonoBehaviour
     void Start()
     {
         gameObject.tag = "Sick";
+        sickTree.SetActive(true);
+        healthyTree.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +26,8 @@ public class TreeController : MonoBehaviour
         if (health >= healthThreshold)
         {
             gameObject.tag = "Healthy";
+        sickTree.SetActive(false);
+        healthyTree.SetActive(true);
         }
     }
 
