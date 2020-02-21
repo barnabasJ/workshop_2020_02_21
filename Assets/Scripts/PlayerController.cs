@@ -11,6 +11,15 @@ public class PlayerController : MonoBehaviour
     private Vector3 destination;
     private Vector3 RayHitPoint;
 
+    private bool hasWater = false;
+
+    public bool HasWater
+    {
+        get => hasWater;
+        set => hasWater = value;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
