@@ -26,7 +26,6 @@ public class TreeController : MonoBehaviour
         if (health >= healthThreshold)
         {
             gameObject.tag = "Healthy";
-            sickTree.SetActive(false);
             healthyTree.SetActive(true);
         }
     }
